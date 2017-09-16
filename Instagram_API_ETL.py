@@ -34,10 +34,8 @@ DF = df.rename(
     columns={0L: 'Created_Time', 1L: 'Caption', 2L: 'Type', 3L: 'Filter', 4L: 'Link', 5L: 'Comments', 6L: 'Likes',
              7L: 'Tags', 8L: 'Id'})
 
-print DF
-
-# db = create_engine('mysql+mysqlconnector://[user]:[pass]@[host]:[port]/[schema]', echo=False)
-# cnx = db.connect()
-# DF.to_sql(name = 'data_base_table_here', con= cnx, if_exists='append', index=True)
-# cnx.close()
-# db.dispose()
+db = create_engine('mysql+mysqlconnector://[user]:[pass]@[host]:[port]/[schema]', echo=False)
+cnx = db.connect()
+DF.to_sql(name = 'data_base_table_here', con= cnx, if_exists='append', index=True)
+cnx.close()
+db.dispose()
