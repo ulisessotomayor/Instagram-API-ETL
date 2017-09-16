@@ -39,3 +39,4 @@ cnx = db.connect()
 DF.to_sql(name = 'data_base_table_here', con= cnx, if_exists='append', index=True)
 cnx.close()
 db.dispose()
+
