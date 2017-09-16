@@ -4,7 +4,7 @@ python-instagram
 A Python 2/3 client for the Instagram REST API
 
 # Script Objective:
-The objective of this script was to scrape data via the recent media enpoint API and time stamp to append to a mysql database.
+The objective of this script was to scrape data via the recent media enpoint API and time stamp each api pull to append to a MySQL database. The data can then be transformed in MySQL for analysis and reporting.
 
 # Installation:
 
